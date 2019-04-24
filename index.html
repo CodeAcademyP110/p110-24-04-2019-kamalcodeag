@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row my-5">
             <div class="col-12 my-2">
                 <form id="adhanForm" class="form-inline">
@@ -79,9 +79,51 @@
             </div>
 
         </div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <select id="cityList" class="mr-3">
+                    <option value="nothing">Select a city</option>
+                    <option value="707860">Hurzuf</option>
+                    <option value="519188">Novinki</option>
+                    <option value="1283378">Gorkhā</option>
+                    <option value="1270260">State of Haryāna</option>
+                    <option value="708546">Holubynka</option>
+                    <option value="1283710">Bāgmatī Zone</option>
+                </select>
+                
+                <button id="show">Show weather forecast</button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <table id="table" class="table table-bordered">
+                    <thead>
+                        <th>Date</th>
+                        <th>Ground</th>
+                        <th>Humidity</th>
+                        <th>Pressure</th>
+                        <th>Sea level</th>
+                        <th>Temp</th>
+                        <th>Temp KF</th>
+                        <th>Temp max</th>
+                        <th>Temp min</th>
+                        <th>Desc.</th>
+                        <th>Wind deg.</th>
+                        <th>Wind spd.</th>
+
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-    <script src="lib/main.js"></script>
+    <script src="src/main.js"></script>
 </body>
 
 </html>
