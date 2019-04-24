@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+body{
+    /* background-color: #E0E1E1; */
+    height: 5000px;
+    /* color: white; */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#times-table{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0s linear;
+}
+#times-table.active{
+  opacity: 1;
+  visibility: visible;
+  transition: all 2s linear;
+}
+#times-table .month-label{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 0;
+}
+.preloader{
+  display: none;
+  height: 300px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.preloader img{
+  width: 200px;
+}
+.preloader.active{
+  display: flex;
+}
